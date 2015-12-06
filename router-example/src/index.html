@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Router Example</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="../node_modules/angular2/bundles/router.dev.js"></script>
+    <script>
+        System.config({
+            packages: {'app': {defaultExtension: 'js'}}
+        });
+        System.import('app/router-example');
+    </script>
+</head>
+<body>
+    <router-app>Loading...</router-app>
+</body>
+</html>

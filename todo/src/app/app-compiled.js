@@ -16,7 +16,7 @@ var AppComponent = (function () {
     }
     AppComponent = __decorate([angular2_1.Component({
         selector: 'todo-app',
-        template: "<h1>My Cool First Angular 2 App - {{title}}</h1>\n                <p>My ToDos:</p>\n                <ul>\n                  <li *ng-for=\"#todo of todos\">\n                    {{ todo }}\n                  </li>\n                </ul>\n              ",
+        template: "<h1>My Cool First Angular 2 App - {{title}}</h1>\n                <p>My ToDos:</p>\n                <ul>\n                  <li *ng-for=\"#todo of todos\">\n                    {{ todo }}\n                  </li>\n                </ul>\n                <br/>\n                anwar\n              ",
         directives: [angular2_1.NgFor]
     }), __metadata('design:paramtypes', [])], AppComponent);
     return AppComponent;

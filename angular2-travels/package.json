@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/tchatel/angular2-travels.git"
   },
+  "scripts": {
+    "tsc": "tsc -p src -w",
+    "start": "live-server"
+  },
   "homepage": "https://github.com/tchatel/angular2-travels.git#readme",
   "devDependencies": {
     "connect": "^3.4.0",

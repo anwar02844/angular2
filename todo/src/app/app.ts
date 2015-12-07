@@ -8,8 +8,11 @@ import {Component,  bootstrap, NgFor} from 'angular2/angular2';
                     {{ todo }}
                   </li>
                 </ul>
+                <br/>
+                anwar
               `,
     directives: [NgFor]
+
 })
 class AppComponent {
     title : string = 'ToDo App';

@@ -8,20 +8,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'ToDo App';
-        this.todos = ['Pray', 'Play', 'Read', 'Write'];
+var KeyUpComponent = (function () {
+    function KeyUpComponent() {
+        this.values = '';
     }
-    AppComponent = __decorate([
+    KeyUpComponent.prototype.showAlert = function (e) {
+        console.log(e);
+    };
+    KeyUpComponent = __decorate([
         angular2_1.Component({
-            selector: 'todo-app',
-            template: "<h1>My Cool First Angular 2 App - {{title}}</h1>\n                <p>My ToDos:</p>\n                <ul>\n                  <li *ng-for=\"#todo of todos\">\n                    {{ todo }}\n                  </li>\n                </ul>\n                <br/>\n                anwar\n              ",
-            directives: [angular2_1.NgFor]
+            selector: 'keyup-form',
+            template: "\n    <h4>Type away! Press [enter] or mouse away when done.</h4>\n    <div>\n      <input #box name=\"anwarkeyup\"\n        (keyup.enter)=\"values=box.value\"\n        (blur)=\"values=box.value\"\n        (click)=\"showAlert($event)\">\n    <div>\n    <div>{{values}}</div>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], KeyUpComponent);
+    return KeyUpComponent;
 })();
-angular2_1.bootstrap(AppComponent);
-//# sourceMappingURL=app.js.map
+exports.KeyUpComponent = KeyUpComponent;
+//# sourceMappingURL=keyup.js.map

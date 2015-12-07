@@ -1,6 +1,6 @@
 import {Component, bootstrap, CORE_DIRECTIVES} from 'angular2/angular2';
 import {Hero} from './hero'
-import {KeyUpComponent} from "./keyup";
+import {KeyUpComponent} from "./keyupCom/keyup";
 @Component({
     selector: 'heros-app',
     template: `
@@ -27,11 +27,10 @@ import {KeyUpComponent} from "./keyup";
 export class AppComponent {
     title = 'Beloved Heroes';
     heroes = [
-        new Hero(1, 'Muhammad Ibn `Abd Allāh'),
-        new Hero(2, 'Abu Bakr Al-Siddiq'),
-        new Hero(3, 'Umar ibn Al-Khattāb'),
-        new Hero(4, 'Uthman Ibn Affan'),
-        new Hero(5, 'Ali ibn Abi Talib')
+        new Hero(1, 'Abdullah Anwar'),
+        new Hero(2, 'Dana  Anwar'),
+        new Hero(3, 'Qais  Anwar'),
+        new Hero(4, 'Mohammad  Anwar'),
     ];
     myHero = this.heroes[0];
 
@@ -41,7 +40,7 @@ export class AppComponent {
             let id : number = this.heroes[this.heroes.length - 1].id + 1;
             this.heroes.push(new Hero(id, newHero.value));
             newHero.value = ''; // clear the newHero textbox
-            console.log(this.heroes);
+            console.log(this.heroes[this.heroes.length-1]);
         }
     }
 }

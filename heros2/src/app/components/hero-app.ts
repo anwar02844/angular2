@@ -43,5 +43,5 @@ In our case <router-outlet></router-outlet> represents the area below the anchor
 })
 
 export class HeroApp {
-    title = 'Beloved Heroes';
+    title = 'Children Heroes';
 }

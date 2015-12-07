@@ -1,26 +1,23 @@
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
-    switch (arguments.length) {
-        case 2: return decorators.reduceRight(function(o, d) { return (d && d(o)) || o; }, target);
-        case 3: return decorators.reduceRight(function(o, d) { return (d && d(target, key)), void 0; }, void 0);
-        case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
-    }
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
 var hero_1 = require('./hero');
-var keyup_1 = require("./keyup");
+var keyup_1 = require("./keyupCom/keyup");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Beloved Heroes';
         this.heroes = [
-            new hero_1.Hero(1, 'Muhammad Ibn `Abd Allāh'),
-            new hero_1.Hero(2, 'Abu Bakr Al-Siddiq'),
-            new hero_1.Hero(3, 'Umar ibn Al-Khattāb'),
-            new hero_1.Hero(4, 'Uthman Ibn Affan'),
-            new hero_1.Hero(5, 'Ali ibn Abi Talib')
+            new hero_1.Hero(1, 'Abdullah Anwar'),
+            new hero_1.Hero(2, 'Dana  Anwar'),
+            new hero_1.Hero(3, 'Qais  Anwar'),
+            new hero_1.Hero(4, 'Mohammad  Anwar'),
         ];
         this.myHero = this.heroes[0];
     }
@@ -30,7 +27,7 @@ var AppComponent = (function () {
             var id = this.heroes[this.heroes.length - 1].id + 1;
             this.heroes.push(new hero_1.Hero(id, newHero.value));
             newHero.value = ''; // clear the newHero textbox
-            console.log(this.heroes);
+            console.log(this.heroes[this.heroes.length - 1]);
         }
     };
     AppComponent = __decorate([

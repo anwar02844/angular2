@@ -10,7 +10,7 @@ import {Person} from './person'
     <div>
       <h2>Hello Angular2!</h2>
       <cmp-person
-        *ng-for="#person of people" 
+        *ng-for="#person of people"
         [name]="person.name"
         (hello)="onSayHello($event)">
       </cmp-person>
@@ -23,7 +23,8 @@ export class App {
     peopleService.getPeople()
       .subscribe(
         people => this.people = people,
-        console.error('Call failed'),
+        //(msg) => console.log(msg),
+        (err) => console.error('Call failed'),
         () => console.log('Completed!')
       );
   }

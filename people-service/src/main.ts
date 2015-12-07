@@ -4,5 +4,4 @@ import {HTTP_BINDINGS} from 'angular2/http';
 import {App} from './app';
 import {PeopleService} from './peopleService'
 
-bootstrap(App, [HTTP_BINDINGS])
-  .catch(err => console.error(err));
+bootstrap(App, [HTTP_BINDINGS]).catch(err => console.error(err));

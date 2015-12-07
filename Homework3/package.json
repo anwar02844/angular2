@@ -1,5 +1,5 @@
 {
-  "name": "heros",
+  "name": "Stars",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "live-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "199602844@qu.edu.qa",
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-alpha.48",

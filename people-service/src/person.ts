@@ -4,7 +4,7 @@ import {Component, View, EventEmitter} from 'angular2/angular2'
 @Component({
   selector: 'cmp-person',
   inputs: ['name'],
-  outputs: ['hello']
+  outputs: ['hello'],
   template: `
     <div>
       <span>{{name}}</span>

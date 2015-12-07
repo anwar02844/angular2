@@ -1,7 +1,7 @@
 var angular2_1 = require('angular2/angular2');
 //First we import all router-related directives and classes from ‘angular2/router’.
 var router_1 = require('angular2/router');
-var hero_app_1 = require('./components/hero-app');
+var login_app_1 = require('./components/login-app');
 var hero_service_1 = require("./services/hero-service");
 /*
  During the application bootstrap we specify dependencies of the HeroApp in the square brackets.
@@ -16,7 +16,7 @@ var hero_service_1 = require("./services/hero-service");
  The browser will treat the fragment after the hash sign as an identifier of
  a specific client-side route.
  */
-angular2_1.bootstrap(hero_app_1.HeroApp, [hero_service_1.HeroService, router_1.ROUTER_PROVIDERS, angular2_1.provide(router_1.LocationStrategy, { useClass: router_1.HashLocationStrategy })]);
+angular2_1.bootstrap(login_app_1.Login, [hero_service_1.HeroService, router_1.ROUTER_PROVIDERS, angular2_1.provide(router_1.LocationStrategy, { useClass: router_1.HashLocationStrategy })]);
 //# sourceMappingURL=bootstrap.js.map
 
 //# sourceMappingURL=bootstrap-compiled.js.map
